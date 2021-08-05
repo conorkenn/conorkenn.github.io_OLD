@@ -298,8 +298,9 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .footer {
+  margin-top: -20vh;
   background-color: #777777;
-  padding: 2.5rem 0 7.5rem 0;
+  padding: 15rem 0 1em 0;
   font-size: 1.4rem;
   color: #F0F0F0; }
   @media only screen and (max-width: 56.25em) {
@@ -307,12 +308,14 @@ body {
       padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 1rem; }
+    margin-bottom: 10rem; }
     @media only screen and (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
+    position: relative;
     width: 15rem;
+    padding-bottom: -10rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #F0F0F0;
@@ -421,6 +424,6 @@ body {
     transform: skewY(7deg); }
 
 .section-projects {
-  margin-top: -17rem;
+  margin-top: -30rem;
   background-color: #F0F0F0;
-  padding: 25rem 0 15rem 0; }
+  padding: 25rem 0 25rem 0; }
