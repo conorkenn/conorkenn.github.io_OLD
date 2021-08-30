@@ -1,76 +1,83 @@
 .footer {
-    margin-top: -20vh;
-    background-color: $color-gray-dark;
-    padding: 15rem 0 1em 0;
-    font-size: 1.4rem;
-    color: $color-grey-light-1;
+  margin-top: -8vh;
+  background-color: $color-grey-light-2;
+  padding: 20rem 0 1em 0;
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+  &__logo-box {
+    text-align: center;
+    margin-top: -15rem;
+    margin-left: 25rem;
+    margin-bottom: 0rem;
 
     @include respond(tab-port) {
-        padding: 8rem 0;
+      margin-bottom: 6rem;
     }
+  }
 
-    &__logo-box {
-        text-align: center;
-        margin-bottom: 10rem;
+  &__logo {
+    position: relative;
+    width: 15rem;
+    padding-bottom: -10rem;
+    margin-left: 25rem;
+    height: auto;
+  }
 
-        @include respond(tab-port) {
-            margin-bottom: 6rem;
-        }
+  &__navigation {
+    //border-top: 1px solid $color-grey-light-1;
+    padding-top: 2rem;
+    display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
     }
+  }
 
-    &__logo {
-        position: relative;
-        width: 15rem;
-        padding-bottom: -10rem;
-        height: auto;
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
     }
+  }
 
-    &__navigation {
-        border-top: 1px solid $color-grey-light-1;
-        padding-top: 2rem;
-        display: inline-block;
-
-
-        @include respond(tab-port) {
-            width: 100%;
-            text-align: center;
-        }
+  &__link {
+    &:link,
+    &:visited {
+      //color: $color-grey-light-1;
+      color: $color-white;
+      //background-color: $color-gray-dark;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      );
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
     }
+  }
 
-    &__list {
-        list-style: none;
+  &__copyright {
+    border-top: 1px solid $color-gray-dark;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
+
+    @include respond(tab-port) {
+      width: 100%;
+      float: none;
     }
-
-    &__item {
-        display: inline-block;
-
-        &:not(:last-child) {
-            margin-right: 1.5rem;
-        }
-    }
-
-    &__link {
-        &:link,
-        &:visited {
-            color: $color-grey-light-1;
-            background-color: $color-gray-dark;
-            text-decoration: none;
-            text-transform: uppercase;
-            display: inline-block;
-            transition: all .2s;
-        }
-        
-    }
-
-    &__copyright {
-        border-top: 1px solid $color-gray-dark;
-        padding-top: 2rem;
-        width: 80%;
-        float: right;
-
-        @include respond(tab-port) {
-            width: 100%;
-            float: none;
-        }
-    }
+  }
 }
