@@ -451,7 +451,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(165, 154, 193, 0.6), rgba(54, 46, 74, 0.9)), url(../img/Amegakuremain.png);
+  background-image: linear-gradient(to right bottom, rgba(165, 154, 193, 0.6), rgba(54, 46, 74, 0.9)), url(../img/pain.gif);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -478,8 +478,8 @@ body {
   background-image: linear-gradient(to right, #a59ac1, #362e4a);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2 rem rgba(0, 0, 0, 0.2); }
