@@ -387,14 +387,16 @@ body {
         width: 100%;
         text-align: center; } }
   .footer__list {
+    padding-top: 15%;
     list-style: none; }
   .footer__item {
-    display: inline-block; }
+    display: inline-block;
+  font-size:12px; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__link:link, .footer__link:visited {
     color: #ffffff;
-    background-image: linear-gradient(to right bottom, #a59ac1, #362e4a);
+   
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -441,22 +443,24 @@ body {
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc(
+ 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc(
+ 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc(
+ 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  height: 95vh;
+  height: 93.5vh;
   background-image: linear-gradient(to right bottom, rgba(165, 154, 193, 0.6), rgba(54, 46, 74, 0.9)), url(../img/pain.gif);
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+ }
   .header__logo-box {
     position: absolute;
     top: 4rem;
